@@ -1,0 +1,41 @@
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:100%;
+    font-weight: bold;
+    font-size: 30px;
+    flex: 35px;
+    color: #020a4b;
+    text-align: left;
+    background-color: #ac0000;
+    font-family: 'Comic Sans MS',sans-serif;
+}
+
+.label {
+    font-family: 'Comic Sans MS',sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 45px;
+    text-align: left;
+    flex: 55px;
+    background-color: #5baafd;
+    font-weight: 100;
+    text-align: right;}
+.Home
+{
+    font-family: 'Comic Sans MS',sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    color: #d70202;
+}
+.value {
+    font-family: 'Comic Sans MS',sans-serif;
+    padding: 25px;
+    text-align: center;
+    background-color: #144;
+    flex: auto;
+    color: #eeff00;
+    font-size: 35px;
+    font-palette: light;
+}

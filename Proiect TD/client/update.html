@@ -1,0 +1,29 @@
+
+    <head>
+        <script type="text/javascript" src="libs/vue.js"></script>
+        <script type="text/javascript" src="libs/axios.js"></script>
+    </head>
+    <body style="background-color: #165a87;color: rgb(81,238,58);font-size: 55px;">
+    <a href="index.html" style="font-size: 50px;font-style: italic;color: fuchsia;">Home</a>
+        <div id="update" style="text-align: center; font-size: 55px; word-spacing: 15px; line-height: 50px;">
+            <br> Update controller with id: {{ id }} and name : {{ contrgogg.name }} </br>
+            <br> Name: <input type="text" style="text-align: center;font-size: 40px;background-color: rgb(3, 69, 244);color: rgba(205, 205, 0, 255);" v-model="contrgogg.name"> </br>
+            <br> Battery: <input type="text" style="text-align: center;font-size: 40px;background-color: rgb(3, 69, 244);color: rgba(205, 205, 0, 255);" v-model="contrgogg.battery"> </br>
+            <br> Color: <input type="text" style="text-align: center;font-size: 40px;background-color: rgb(3, 69, 244);color: rgba(205, 205, 0, 255);" v-model="contrgogg.color"> </br>
+            <br> Power Supply: <input type="text" style="text-align: center;font-size: 40px;background-color: rgb(3, 69, 244);color: rgba(205, 205, 0, 255);" v-model="contrgogg.powersupply"> </br>
+            <br> Description: <input type="text" style="text-align: center;font-size: 40px;background-color: rgb(3, 69, 244);color: rgba(205, 205, 0, 255);" v-model="contrgogg.description"> </br>
+            <br> Price: <input type="text" style="text-align: center;font-size: 40px;background-color: rgb(3, 69, 244);color: rgba(205, 205, 0, 255);" v-model="contrgogg.price"> </br>
+            <br> Dimension: <input type="text" style="text-align: center;font-size: 40px;background-color: rgb(3, 69, 244);color: rgba(205, 205, 0, 255);" v-model="contrgogg.dimension"> </br>
+            <br>
+            <button  v-on:click="update(contrgogg.id, contrgogg.name)" style="text-align: center;border-block-color: teal;border: 15px;padding: 5px;background-color: #efc957;font-size: 34px; align-items: end">Save</button> </br>
+
+
+
+
+
+            <p>{{message}}</p>
+        </div>
+
+        <script src="src/update.js"></script>
+    </body>
+</html>

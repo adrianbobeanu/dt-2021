@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/details.css" />
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+</head>
+
+<body style="background-color: teal">
+<a href="index.html" style="font-size: 50px;font-style: italic;color: fuchsia;text-align: right;background-color: teal">Home</a>
+    <div id="details" style="font-style: italic; ">
+        <h1 style=" text-align: center;font-size: 45px;font-style: oblique;background-color: teal;font-family: monospace;">Details for controller or goggle with id: {{ contrgogg.id }} and name: {{ contrgogg.name }}</h1>
+        <div class="container">
+            <div class="custom"></div>
+            <div class="label">Name:</div>
+            <div class="value">{{contrgogg.name}}</div>
+        </div>
+        <div class="label">Price: {{ contrgogg.price }}</div>
+        <div class="value">Color: {{ contrgogg.color }}</div>
+        <div class="label">Power Supply:</div>
+        <div class="value">{{contrgogg.powersupply}}</div>
+        <div class="label">Description:</div>
+        <div class="value">{{contrgogg.description}}</div>
+        <div class="label">Battery:</div>
+        <div class="value">{{contrgogg.battery}}</div>
+            <div class="label">Dimension:</div>
+            <div class="value">{{contrgogg.dimension}}</div>
+    </div>
+    <script src="src/details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <title>Controllers and Goggles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/vue-material.css" />
+  <script type="text/javascript" src="libs/vue.js"></script>
+  <script type="text/javascript" src="libs/vue-material.js"></script>
+  <script type="text/javascript" src="libs/axios.js"></script>
+  <script type="text/javascript" src="src/users-service.js"></script>
+</head>
+<style>
+  .content {
+    max-width: 555px;
+  }
+</style>
+<div class="title">
+  <div class="title">Controllers and Goggles</div>
+</div>
+<body>
+  <div id="app" style="font-size: 55px; word-spacing: 155px; line-height: 50px;">
+
+    <p style="text-align: center" v-if="contrgoggs.length == 0">No controllers or goggles found</p>
+
+    <ul class="user-list" v-if="contrgoggs.length > 0" style="font-style: italic;">
+
+        <div class="user-row-header">
+          <div class="user-name" style="text-align: center">Name </div>
+          <br> <br>
+        <div class="user-city" style="text-align: center">Price</div>
+          <div class="user-city" style="text-align: center">Details</div>
+            <div class="user-city" style="text-align: right">PowerSupply </div>
+          </br> </br>
+        </div>
+
+
+      <li v-for="contrgogg in contrgoggs">
+        <div class="">
+          <p> <a :href="'details.html?id='+contrgogg.id">{{ contrgogg.name }}</a></p>
+          <span class="" style="text-align: left">{{ contrgogg.price }}</span>
+          {{ contrgogg.description }} <span class="">{{ contrgogg.powersupply }}</span> <br>
+          <a :href="'update.html?id='+contrgogg.id" target="_self">Update</a> </br>  </br>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="src/app.js"></script>
+</body>
+
+</html>

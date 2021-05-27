@@ -1,0 +1,15 @@
+.body
+{
+    font-size: 35px;
+    background-color: #0055ff;
+    font-family: 'Comic Sans MS',sans-serif;
+}
+div.container
+{
+    text-align: center;
+    font-size: 35px;
+    word-spacing: 15px;
+    line-height: 50px;
+
+    font-family: 'Comic Sans MS',sans-serif;
+}
