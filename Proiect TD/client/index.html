@@ -29,7 +29,7 @@
     <ul class="user-list" v-if="contrgoggs.length > 0" style="font-style: italic;">
 
         <div class="user-row-header">
-          <div class="user-name" style="text-align: center">Name </div>
+          <div class="user-name" style="text-align: center"> Name </div>
           <br> <br>
         <div class="user-city" style="text-align: center">Price</div>
           <div class="user-city" style="text-align: center">Details</div>
@@ -40,7 +40,7 @@
 
       <li v-for="contrgogg in contrgoggs">
         <div class="">
-          <p> <a :href="'details.html?id='+contrgogg.id">{{ contrgogg.name }}</a></p>
+          <p> <a :href="'details.html?id='+contrgogg.id"> {{ contrgogg.id }}.   {{ contrgogg.name }}</a></p>
           <span class="" style="text-align: left">{{ contrgogg.price }}</span>
           {{ contrgogg.description }} <span class="">{{ contrgogg.powersupply }}</span> <br>
           <a :href="'update.html?id='+contrgogg.id" target="_self">Update</a> </br>  </br>
